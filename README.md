@@ -1,33 +1,45 @@
-# Getting Started
+# @joggerdocs/fastify-contract-generator
 
-Follow the below todos to get started with this template.
+![CI](https://github.com/@joggerdocs/fastify-contract-generator/workflows/CI/badge.svg)
+[![NPM version](https://img.shields.io/npm/v/@joggerdocs/fastify-contract-generator.svg?style=flat)](https://www.npmjs.com/package/@joggerdocs/fastify-contract-generator)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
 
-- [ ] Update the package.json to the correct name & version
-- [ ] Add your code
-- [ ] Add documentation on how to use your code
-- [ ] Create an npm publish token for this repository and add as a secret `NPM_PUBLISH_TOKEN`
-- [ ] Remove everything above and including the `<hr>`
+Automatically generate types and fixtures for based on route JSON Schema definitions, for frontends, dependent services, or SDKs.
 
-<hr>
+## How to use
 
-# <TITLE>
+TBD
 
-> Add a description of the package
+<details>
+  <summary>
+    Example Output
+  </summary>
+</details>
 
-## Getting Started
+## Example
 
-> Add a short description if needed
+```javascript
+const fastify = require('fastify')
+const autoload = require('@joggerdocs/fastify-contract-generator')
 
-**npm**
+const app = fastify()
 
-```shell
-npm install <PACKAGE>
+app.register(contractGenerator)
+
+app.listen({ port: 3000 })
 ```
 
-**yarn**
+```typescript
+import fastify from 'fastify'
+import autoload from '@joggerdocs/fastify-contract-generator'
 
-```shell
-yarn add <PACKAGE>
+const app = fastify()
+
+app.register(contractGenerator)
+
+app.listen({ port: 3000 })
 ```
 
-> Add a directions on how to use as a CLI or as a package
+## Configuration
+
+TBD

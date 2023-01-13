@@ -101,5 +101,6 @@ Thumbs.db
 __tests__/runner/*
 lib/**/*
 
-# IntelliJ
+# IDEs
 .idea
+.vscode
